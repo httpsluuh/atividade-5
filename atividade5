@@ -1,0 +1,34 @@
+class Pessoa:
+    def __init__(self, nome, email, sexo, numero, cpf):
+        self.nome = nome
+        self.email = email
+        self.sexo = sexo
+        self.numero = numero
+        self.cpf = cpf
+
+    def mostrar_dados(self):
+        print("Nome:", self.nome)
+        print("Email:", self.email)
+        print("Sexo:", self.sexo)
+        print("Número:", self.numero)
+        print("CPF:", self.cpf)
+        print("-------------------------")
+
+pessoa1 = Pessoa(
+    "Luara",
+    "luaraeva5@gmail.com",
+    "Feminino",
+    "6198246548",
+    "123.456.789-00"
+)
+
+pessoa2 = Pessoa(
+    "Arthur",
+    "arthursousere@gmail.com",
+    "Masculino",
+    "61940028922",
+    "987.654.321-00"
+)
+
+pessoa1.mostrar_dados()
+pessoa2.mostrar_dados()
